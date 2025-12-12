@@ -84,8 +84,7 @@ jobs:
             2. In VS Code, open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
             3. Run `Extensions: Install from VSIX...`
             4. Select the downloaded file
-
-            files: ${{ steps.vsix.outputs.filename }}
+          files: ${{ steps.vsix.outputs.filename }}
           draft: false
           prerelease: false
           generate_release_notes: true
