@@ -32,14 +32,14 @@
 		"activityBar.background": "#E0DED6",
 		"activityBar.foreground": "#5C6E6E",
 		"activityBar.inactiveForeground": "#8A918A",
-		"activityBar.border": "#F0EEE7",
+		"activityBar.border": "#D5D3CC",
 		"activityBarBadge.background": "#7A8872",
 		"activityBarBadge.foreground": "#FFFFFF",
 
 		// Side Bar
 		"sideBar.background": "#E8E6DF",
 		"sideBar.foreground": "#5C6E6E",
-		"sideBar.border": "#F0EEE7",
+		"sideBar.border": "#D5D3CC",
 		"sideBarTitle.foreground": "#5C6E6E",
 		"sideBarSectionHeader.background": "#E0DED6",
 		"sideBarSectionHeader.foreground": "#5C6E6E",
@@ -49,17 +49,17 @@
 		"titleBar.activeForeground": "#5C6E6E",
 		"titleBar.inactiveBackground": "#E0DED6",
 		"titleBar.inactiveForeground": "#8A918A",
-		"titleBar.border": "#F0EEE7",
+		"titleBar.border": "#D5D3CC",
 
 		// Tabs
 		"tab.activeBackground": "#F0EEE7",
 		"tab.activeForeground": "#5C6E6E",
 		"tab.inactiveBackground": "#E0DED6",
 		"tab.inactiveForeground": "#8A918A",
-		"tab.border": "#F0EEE7",
+		"tab.border": "#D5D3CC",
 		"tab.activeBorderTop": "#7A8872",
 		"editorGroupHeader.tabsBackground": "#E0DED6",
-		"editorGroupHeader.tabsBorder": "#F0EEE7",
+		"editorGroupHeader.tabsBorder": "#D5D3CC",
 
 		// Panel
 		"panel.background": "#F0EEE7",
@@ -91,7 +91,7 @@
 		// Status Bar
 		"statusBar.background": "#E0DED6",
 		"statusBar.foreground": "#8A918A",
-		"statusBar.border": "#F0EEE7",
+		"statusBar.border": "#D5D3CC",
 		"statusBar.debuggingBackground": "#8B7355",
 		"statusBar.debuggingForeground": "#FFFFFF",
 		"statusBar.noFolderBackground": "#E0DED6",

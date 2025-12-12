@@ -2,7 +2,7 @@
   "name": "solstice",
   "displayName": "Solstice Theme",
   "description": "A painterly VS Code theme suite featuring \"Estival\" (Light) inspired by Van Gogh and \"Hibernal\" (Dark) inspired by Monet. Soft, warm, and distraction-free.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "kev1nweng",
   "license": "MIT",
   "icon": "icon.png",
