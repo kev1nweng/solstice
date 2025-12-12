@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet.
 
+## [0.2.0] - 2025-12-12
+
+### Changed
+
+- Updated theme icon.
+- Improved borders for the light variant.
+
 ## [0.1.0] - 2025-12-12
 
 ### Added
