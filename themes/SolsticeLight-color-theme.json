@@ -169,9 +169,9 @@
 		"notifications.border": "#B3AD9C",
 
 		// Quick Picker
-		"quickInput.background": "#D9D7D0",
+		"quickInput.background": "#E6E3DB",
 		"quickInput.foreground": "#3A4F4F",
-		"quickInputList.focusBackground": "#A0AA9860",
+		"quickInputList.focusBackground": "#B8B8AA60",
 
 		// Welcome Page
 		"welcomePage.background": "#E8E6DF",
