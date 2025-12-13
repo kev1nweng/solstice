@@ -13,6 +13,7 @@ jobs:
     outputs:
       version_changed: ${{ steps.check.outputs.version_changed }}
       version: ${{ steps.check.outputs.version }}
+      release_notes: ${{ steps.check.outputs.release_notes }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,6 +31,17 @@ jobs:
           git show HEAD~1:package.json > previous_package.json 2>/dev/null || echo '{"version":"0.0.0"}' > previous_package.json
           PREVIOUS_VERSION=$(jq -r '.version' previous_package.json)
           echo "Previous version: $PREVIOUS_VERSION"
+
+          # Extract release notes for the current version
+          RELEASE_NOTES=$(awk -v version="$CURRENT_VERSION" '
+            $0 ~ "^## \\[" version "\\]" {flag=1; print; next}
+            /^## \\[/ && flag {exit}
+            flag {print}
+          ' CHANGELOG.md)
+          RELEASE_NOTES=${RELEASE_NOTES:-"*No changelog entry found for $CURRENT_VERSION.*"}
+          echo "release_notes<<EOF" >> $GITHUB_OUTPUT
+          printf '%s\n' "$RELEASE_NOTES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
           # Compare versions
           if [ "$CURRENT_VERSION" != "$PREVIOUS_VERSION" ]; then
@@ -79,11 +91,15 @@ jobs:
           body: |
             ## Solstice Theme v${{ needs.check-version.outputs.version }}
 
+            ${{ needs.check-version.outputs.release_notes }}
+
             ### Installation
             1. Download the `.vsix` file below
             2. In VS Code, open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
             3. Run `Extensions: Install from VSIX...`
             4. Select the downloaded file
+
+            You may also install directly from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=kev1nweng.solstice).
           files: ${{ steps.vsix.outputs.filename }}
           draft: false
           prerelease: false
