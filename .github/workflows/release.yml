@@ -35,7 +35,7 @@ jobs:
           # Extract release notes for the current version
           RELEASE_NOTES=$(awk -v version="$CURRENT_VERSION" '
             $0 ~ "^## \\[" version "\\]" {flag=1; print; next}
-            /^## \\[/ && flag {exit}
+            /^## \[/ && flag {exit}
             flag {print}
           ' CHANGELOG.md)
           RELEASE_NOTES=${RELEASE_NOTES:-"*No changelog entry found for $CURRENT_VERSION.*"}
@@ -80,7 +80,11 @@ jobs:
       - name: Get VSIX filename
         id: vsix
         run: |
-          VSIX_FILE=$(ls *.vsix)
+          VSIX_FILE=$(ls -1 *.vsix 2>/dev/null | head -n 1)
+          if [ -z "$VSIX_FILE" ]; then
+            echo "Error: No .vsix file found"
+            exit 1
+          fi
           echo "filename=$VSIX_FILE" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
