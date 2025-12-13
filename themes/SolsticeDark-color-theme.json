@@ -457,6 +457,7 @@
 				"keyword.other"
 			],
 			"settings": {
+				"fontStyle": "italic",
 				"foreground": "#A89AB8"
 			}
 		},
@@ -497,7 +498,7 @@
 				"entity.name.type"
 			],
 			"settings": {
-				"fontStyle": "italic",
+				"fontStyle": "",
 				"foreground": "#C0B2D0"
 			}
 		},
