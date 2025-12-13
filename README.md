@@ -10,7 +10,7 @@ A painterly VS Code theme suite featuring "Estival" (Light) inspired by Van Gogh
 
 ### "Estival" (Light Variant)
 
-[![Solstice Estival Preview](https://i.postimg.cc/JhSzpGGL/image.png)](https://i.postimg.cc/JhSzpGGL/image.png)
+[![Solstice Estival Preview](https://i.postimg.cc/kMyk5Xkr/image.png)](https://i.postimg.cc/kMyk5Xkr/image.png)
 
 Inspired by [Vincent van Gogh - Roses (1890)](https://www.metmuseum.org/art/collection/search/436534).
 
@@ -18,7 +18,7 @@ Inspired by [Vincent van Gogh - Roses (1890)](https://www.metmuseum.org/art/coll
 
 ### "Hibernal" (Dark Variant)
 
-[![Solstice Hibernal Preview](https://i.postimg.cc/mg0vqMyr/image.png)](https://i.postimg.cc/mg0vqMyr/image.png)
+[![Solstice Hibernal Preview](https://i.postimg.cc/BbcsSTHY/image.png)](https://i.postimg.cc/BbcsSTHY/image.png)
 
 Inspired by [Claude Monet - Water-Lilies (1907)](https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Water-Lilies_(Bridgestone_Museum).jpg)
 
