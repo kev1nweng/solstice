@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet.
 
-## [0.3.0] - 2025-12-12
+## [0.4.1] - 2025-12-12
 
 - Custom bracket colors for the dark variant.
 - Better syntax highlighting for the light variant, including enhanced color differentiation.
